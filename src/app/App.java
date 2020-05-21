@@ -18,6 +18,13 @@ public class App {
 			System.out.println("O valor deve ser positivo. Tente novamente:");
 			largRetangulo = sc.nextDouble();
         }
+        System.out.println("Digite a altura do retangulo: ");
+		altRetangulo = sc.nextDouble();
+		while (altRetangulo <= 0) {
+			System.out.println("O valor deve ser positivo. Tente novamente: ");
+			altRetangulo = sc.nextDouble();
+		}
+
         sc.close();
     }
 }
